@@ -1,0 +1,47 @@
+/* ── Theme Variables ── Edit this file to change colors ── */
+
+/* Shared / accent colors */
+:root {
+  --green:       #00ff41;
+  --green-glow:  rgba(0,255,65,0.4);
+  --blue:        #00d4ff;
+  --blue-glow:   rgba(0,212,255,0.4);
+  --red:         #ff4444;
+  --yellow:      #ffcc00;
+  --radius:      6px;
+  --radius-lg:   10px;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg:          #050508;
+  --bg2:         #0a0a10;
+  --bg3:         #0e0e16;
+  --bg4:         #1a1a28;
+  --border:      rgba(0,255,65,0.12);
+  --text:        #c8d4c8;
+  --text-dim:    #6b7a6b;
+  --text-bright: #e8f0e8;
+  --shadow:      rgba(0,0,0,0.6);
+
+  /* Dark mode uses full-brightness green */
+  --green:       #00ff41;
+  --green-glow:  rgba(0,255,65,0.4);
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg:          #f0f4f0;
+  --bg2:         #e4ece4;
+  --bg3:         #ffffff;
+  --bg4:         #d0dcd0;
+  --border:      rgba(0,140,45,0.2);
+  --text:        #2a3a2a;
+  --text-dim:    #6a7e6a;
+  --text-bright: #0d1f0d;
+  --shadow:      rgba(0,0,0,0.12);
+
+  /* Light mode: muted green so it doesn't burn against white */
+  --green:       #00a832;
+  --green-glow:  rgba(0,168,50,0.25);
+}
